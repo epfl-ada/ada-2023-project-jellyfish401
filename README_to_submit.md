@@ -53,8 +53,8 @@ Our timeline consists of internal milestones on every Wednesday (meeting in pers
 - 13.12.23: Tasks
 - 15.12.23: Tasks
 ---
-- 20.12.22: Tasks
-- 22.12.22: **Project milestone 3 deadline** 
+- 20.12.23: Tasks
+- 22.12.23: **Project milestone 3 deadline** 
 
 ## Organization within the team
 
