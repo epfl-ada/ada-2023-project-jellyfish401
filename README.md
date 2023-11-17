@@ -54,46 +54,61 @@ To make statements about the dataset, we define the following metrics, calculate
 * Frequency of article C's involvement in pathways where it was neither the start nor the target
 
 
-
 #### Controlling for confounding factors
 
-* Multiple linear regression 
+To assess whether the Wikispeedia dataset (encompassing hyperlink structure and article content) exhibits bias, we control for potential confounding factors by training a predictive model using **multiple linear regression** that accounts for confounders such as population size, economic strength etc. By comparing the model's predicted values against the actual values, we can determine the presence and extent of representation bias.
+
+#### Sentiment analysis
+
+For sentiment analysis we use an open source models, provided by https://huggingface.co/blog/sentiment-analysis-python. [Authors](https://arxiv.org/abs/2106.09462)
+
+### Ethical considerations
+
+As proposed by the course staff, we will contact Dr. Cécile Hardebolle, since ethical/racial bias is a very sensitive topic.
+
+
 
 ### Further explorations
 
+Further steps to explore include:
+
+* develop a method to match countries to control confounding factors
+* analyze the distribution of categories (e.g. People, Cultrue) of articles linked to country articles
+* analyze the distribution of topics or keywords (e.g. war, peace) in the articles of countries
+
+Again, we would group the results by region or economic situation and then comapre the values by group.
 
 ## Proposed timeline and internal milestones
 Our timeline consists of internal milestones on every Wednesday (meeting in person) and Friday (meeting online) until the project deadline.
 
-- 17.11.23: **Project milestone 2 deadline**
-    - Tasks
+- 17.11.23: *Project milestone 2 deadline*
 ---
-- 22.11.23:Tasks
-- 24.11.23: Tasks
+- 22.11.23: Start analysis for research questions 1,2,3
+- 24.11.23: Split work for homework 2
 ---
-- 29.11.23: Working on Homework 2
-- 1.12.23: **Homework 2 deadline**
+- 29.11.23: Finish work for homework 2
+- 1.12.23: *Homework 2 deadline*
 ---
-- 6.12.23: Tasks
-- 8.12.23: Tasks
+- 6.12.23: Start analysis for research questions 4,5,6
+- 8.12.23: Start website and combining results
 ---
-- 13.12.23: Tasks
-- 15.12.23: Tasks
+- 13.12.23: Data analysis for research questions done, update on data story
+- 15.12.23: Build data vizualisation for the website
 ---
-- 20.12.23: Tasks
-- 22.12.23: **Project milestone 3 deadline** 
+- 20.12.23: Final edits for the website
+- 22.12.23: *Project milestone 3 deadline* 
 
 ## Organization within the team
 
-Blanche:
+Blanche: Data story and website
 
-Colin:
+Colin: Data analysis for research question part 1 and 2
 
-Francisco:
+Francisco: Data story and website
 
-Tim:
+Tim: Data analysis for research questions part 2 and 3
 
-Zaineb:
+Zaineb: Overall data analysis
 
 ## Sources
 
