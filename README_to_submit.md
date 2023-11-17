@@ -8,6 +8,7 @@ Wikipedia serves as a primary information source for both general users and acad
 ## Research questions
 
 To analyze biases based on countries in the Wikispeedia dataset, we aim to answer three different kind of research questions.
+
 First, we want to focus on the Wikipedia articles about countries and their hyperlink structure in the Wikispeedia dataset:
 * Q1: How different are the length of these articles and their number of hyperlinks?
 * Q2: How positive or negative is the content of an article and the articles linked to it?
