@@ -9,16 +9,16 @@ Wikipedia serves as a primary information source for both general users and acad
 
 To analyze biases based on countries in the Wikispeedia dataset, we aim to answer three different kind of research questions.
 First, we want to focus on the Wikipedia articles about countries and their hyperlink structure in the Wikispeedia dataset:
-* How different are the length of these articles and their number of hyperlinks?
-* How positive or negative is the content of an article and the articles linked to it?
+* Q1: How different are the length of these articles and their number of hyperlinks?
+* Q2: How positive or negative is the content of an article and the articles linked to it?
 
 Second, we want to focus on the pathways that were taken by the players, where the target or goal article of the game is a country:
-* Is there a correlation between the ratio of finished pathways and the country, continent or country classification by the UN?
-* Is there a correlation between the length of the pathway taken respectively the time needed and the country, continent or country classification by the UN?
+* Q3: Is there a correlation between the ratio of finished pathways and the country, continent or country classification by the UN?
+* Q4: Is there a correlation between the length of the pathway taken respectively the time needed and the country, continent or country classification by the UN?
 
 Third, we want to deepen the analysis by controlling for as many confounders as possible and answer the following questions:
-* By investigating article length, article sentiment or number of hyperlinks while controlling for e.g. population size, economic power or official languages, is there a representation bias based on countries in Wikipedia? 
-* While controlling for as much of the bias in the dataset as we can, do we see bias of the players in the pathways they have taken? 
+* Q5: By investigating article length, article sentiment or number of hyperlinks while controlling for e.g. population size, economic power or official languages, is there a representation bias based on countries in Wikipedia? 
+* Q6: While controlling for as much of the bias in the dataset as we can, do we see bias of the players in the pathways they have taken? 
 
 
 ## Additional datasets
