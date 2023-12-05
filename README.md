@@ -1,5 +1,11 @@
 ### Exploring Ethnic/Racial Bias in Wikipedia using the Wikispeedia Dataset
 
+## P3 Deliverables
+1. The final project repository containing your final notebook. We will grade the correctness, quality of code, and quality of textual descriptions. There should be a single Jupyter notebook containing the main logic. The implementation of helper functions that is not essential for understanding the main logic should be contained in external scripts/modules that will be called from the main notebook.
+2. Data story (website link)
+
+
+
 ## Abstract
 
 Wikipedia serves as a primary information source for both general users and academia, and as a [crucial training database](https://wikimediafoundation.org/news/2023/07/12/wikipedias-value-in-the-age-of-generative-ai/) for machine learning algorithms, particularly large language models (LLMs). Biases in Wikipedia articles, such as [gender gaps](https://arxiv.org/abs/1501.06307) indicating underrepresentation of women and stereotype perpetuation, not only affect public knowledge but also risk being [amplified a lot by LLMs](https://dl.acm.org/doi/full/10.1145/3597307) in the future. In addition to gender bias, [bias based on ethnicity and race](https://journals.sagepub.com/doi/full/10.1177/20539517231165490) represents among others a significant societal challenge. Our study utilizes the Wikispeedia dataset to explore ethnic/racial bias in Wikipedia. Initially, we considered classifying individuals by ethnicity for analysis, but technical complexities render this approach impractical and ethicaly too delicate. Consequently, our research focuses on country representation within Wikispeedia to examine biases in the dataset and the user navigation patterns. 
