@@ -102,10 +102,10 @@ Our timeline consists of internal milestones on every Wednesday (meeting in pers
 
 Organization example
 
-John: Plotting graphs during data analysis, crawling the data, preliminary data analysis
-Mary: Problem formulation, coming up with the algorithm
-Chris: Coding up the algorithm, running tests, tabulating final results
-Eve: Writing up the report or the data story, preparing the final presentation
+- John: Plotting graphs during data analysis, crawling the data, preliminary data analysis
+- Mary: Problem formulation, coming up with the algorithm
+- Chris: Coding up the algorithm, running tests, tabulating final results
+- Eve: Writing up the report or the data story, preparing the final presentation
 
 Blanche: Data story and website
 
