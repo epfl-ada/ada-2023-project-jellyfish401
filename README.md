@@ -1,4 +1,4 @@
-### Exploring Ethnic/Racial Bias in Wikipedia using the Wikispeedia Dataset
+### Exploring Country and Continent wise Bias in Wikipedia using the Wikispeedia Dataset
 
 ## P3 Deliverables
 1. The final project repository containing your final notebook. We will grade the correctness, quality of code, and quality of textual descriptions. There should be a single Jupyter notebook containing the main logic. The implementation of helper functions that is not essential for understanding the main logic should be contained in external scripts/modules that will be called from the main notebook.
