@@ -101,6 +101,7 @@ Our timeline consists of internal milestones on every Wednesday (meeting in pers
 ## Organization within the team
 
 Organization example
+
 John: Plotting graphs during data analysis, crawling the data, preliminary data analysis
 Mary: Problem formulation, coming up with the algorithm
 Chris: Coding up the algorithm, running tests, tabulating final results
