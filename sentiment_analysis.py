@@ -12,9 +12,6 @@ import numpy as np
 import pandas as pd
 from emoji import emojize
 
-def get_plaintext_articles_df(plaintext_articles = pd.DataFrame()):
-    return plaintext_articles
-
 def sentiment_analysis(s, model_link = "finiteautomata/bertweet-base-sentiment-analysis" , bs = 250):
     """
     Args:
@@ -62,7 +59,7 @@ def sentiment_analysis(s, model_link = "finiteautomata/bertweet-base-sentiment-a
     
     return df_return, sentiment
 
-def main():
+def do_sentiment_analysis(plaintext_articles = pd.DataFrame()) -> None:
     # WARNING: Long runtime cell ~30min on a laptop
     # create DataFrame with sentiment analysis results
     sentiment_analysis_df = pd.DataFrame(columns=['Country', 'Sentiment', 'NEG_count', 'NEG_sum', 'NEU_count', 'NEU_sum', 'POS_count', 'POS_sum'])
@@ -87,7 +84,5 @@ def main():
 
     sentiment_analysis_df.to_csv("sentiment_analysis.csv")
 
-if __name__ == "__main__":
-    main()
     
 
