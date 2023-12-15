@@ -54,12 +54,12 @@ def get_region(country, DataFrame_with_regions, names_to_replace):
     Returns the region for country, using names_to_replace for those with different names in DataFram_with_region than in the Wikispeedia Dataset
     """
     country = country.replace('_',' ')
-    if country in DataFrame_with_regions['Country or Area'].values:
-        region = DataFrame_with_regions[DataFrame_with_regions['Country or Area'] == country]['Sub-region Name'].values
+    if country in DataFrame_with_regions['Country'].values:
+        region = DataFrame_with_regions[DataFrame_with_regions['Country'] == country]['Sub-region Name'].values
         return region[0]
     elif names_to_replace.get(country) != None:
         new_country = names_to_replace[country]
-        region = DataFrame_with_regions[DataFrame_with_regions['Country or Area'] == new_country]['Sub-region Name'].values
+        region = DataFrame_with_regions[DataFrame_with_regions['Country'] == new_country]['Sub-region Name'].values
         if len(region) > 0:
             return region[0]
         else:

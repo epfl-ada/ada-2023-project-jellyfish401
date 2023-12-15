@@ -1,4 +1,6 @@
 # Code to generate sentiment_analysis.csv using HuggingFace pipelin
+# Functions are never called in the main notebook, since runtime is around 40min
+# so it was just run once to generate sentiment_analysis.csv
 
 # packages needed (only install once per machine), ! and % might be changed based on your machine
 # !pip install torch
@@ -64,7 +66,6 @@ def do_sentiment_analysis(plaintext_articles = pd.DataFrame()) -> None:
     # create DataFrame with sentiment analysis results
     sentiment_analysis_df = pd.DataFrame(columns=['Country', 'Sentiment', 'NEG_count', 'NEG_sum', 'NEU_count', 'NEU_sum', 'POS_count', 'POS_sum'])
     index = 0
-    plaintext_articles = get_plaintext_articles_df()
 
     for cntry in plaintext_articles['Country']:
     # Retrieve the article content of the country
