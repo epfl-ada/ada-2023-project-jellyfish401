@@ -40,16 +40,8 @@ Additionally, we also need the population size of each country:
 
 ## Methods
 
-### Pre-proccessing and dataset construction
-To analyse the Wikispeedia dataset, we create several DataFrames:
-
-TODO
-
-* path_overview = contains all information about the pathways the player took (start article, target article, duration of the game, etc.) and the shortest possible path
-* main_categories = titel of wikipedia article and the main category
-* plaintext_articles = title of wikipedia article, its content and the length of the article
-
-The datasets are pre-processed, cleaned, made readable and converted into a DataFrame.
+### Data cleaning and wrangling
+To analyse the Wikispeedia dataset, several DataFrames are created to extract the necessary data from the Wikispeedia dataset. Then those dataframes are populated with additional data from the UN datasets, such as region (17 different categories), economic classification (4 different categories) and their population size. To be consistent with the Wikispeedia dataset, the additional data reflects the status between 2012 to 2014. Special attention had to be paid to the fact, that for several countries the UN uses different names, than Wikipedia. As example, Venezuelas official name is Venezuela (Plurinational State of). Additionally some countries like Taiwan are not recognized by the UN. Since we analyze the Wikispeedia dataset, we convert the names in the UN dataframes to those used in Wikipedia and add additional information for e.g. Taiwan on our own.
 
 
 ### Statistical analysis
@@ -69,7 +61,7 @@ To visualize those different metrics, we group them by region and economic class
 
 #### Regression analysis
 
-To assess whether the Wikispeedia dataset, and specifically the in-degree of articles, contains bias. We will control for confounding factors by using **multiple linear regressions**. We account for the effects of the population size and economic classification, and see that a large amount of the variance in the in-degrees variable can be explained by the region variable, indicating a geographical bias.
+To assess whether the Wikispeedia dataset contains **multiple linear regressions** is used. Multiple linear regression gives us the effect size and the p-value of e.g. the relationship between region and the sentiment score. Furthermore, multiple linear regression gives us the possibility to control for the confouning factors population size and economic classification. Population size and economic classification are important confounding factors, because both the economic power and the population size influence the amount of content that can be generated and published on Wikipedia.
 
 
 ### Ethical considerations
@@ -116,4 +108,3 @@ Our timeline consists of internal milestones on every Wednesday (meeting in pers
 [LLMs amplify content](https://dl.acm.org/doi/full/10.1145/3597307)
 [Ethnic and racial bias in Wikipedia](https://journals.sagepub.com/doi/full/10.1177/20539517231165490)
 [Sentiment Analysis](https://arxiv.org/abs/2106.09462)
-
