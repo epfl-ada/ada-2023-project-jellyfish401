@@ -1,5 +1,5 @@
-### Worldwide WikiSpeedia - A Bias Check
-## Exploring country representation bias in Wikipedia using the Wikispeedia Dataset
+# Worldwide WikiSpeedia - A Bias Check
+### Exploring country representation bias in Wikipedia using the Wikispeedia Dataset
 
 ## Data Story
 
