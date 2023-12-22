@@ -1,5 +1,5 @@
 # Code to generate sentiment_analysis.csv using HuggingFace pipelin
-# Functions are never called in the main notebook, since runtime is around 40min
+# Functions are never called in the main notebook, since runtime is around 70min
 # so it was just run once to generate sentiment_analysis.csv
 
 # packages needed (only install once per machine), ! and % might be changed based on your machine
@@ -62,7 +62,7 @@ def sentiment_analysis(s, model_link = "finiteautomata/bertweet-base-sentiment-a
     return df_return, sentiment
 
 def do_sentiment_analysis(plaintext_articles = pd.DataFrame()) -> None:
-    # WARNING: Long runtime cell ~30min on a laptop
+    # WARNING: Long runtime cell ~70min on a laptop
     # create DataFrame with sentiment analysis results
     sentiment_analysis_df = pd.DataFrame(columns=['Country', 'Sentiment', 'NEG_count', 'NEG_sum', 'NEU_count', 'NEU_sum', 'POS_count', 'POS_sum'])
     index = 0
