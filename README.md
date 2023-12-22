@@ -69,8 +69,7 @@ To visualize those different metrics, we group them by region and economic class
 
 #### Regression analysis
 
-**TODO**
-To assess whether the Wikispeedia dataset (hyperlink structure and article content) exhibits bias, we will control for potential confounding factors by training a predictive model using **multiple linear regression** that accounts for confounders such as population size, economic strength etc. By comparing the model's predicted values against the actual values, we can determine the presence and extent of representation bias.
+To assess whether the Wikispeedia dataset, and specifically the in-degree of articles, contains bias. We will control for confounding factors by using **multiple linear regressions**. We account for the effects of the population size and economic classification, and see that a large amount of the variance in the in-degrees variable can be explained by the region variable, indicating a geographical bias.
 
 
 ### Ethical considerations
