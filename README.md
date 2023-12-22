@@ -18,11 +18,11 @@ To analyze country representation bias in the Wikispeedia dataset, we aim to ans
 * Q1: How different are the length of these articles and their number of hyperlinks for each region?
 * Q2: How positive or negative is the content of these articles?
 
-**Second**, we want to focus on the pathways that were taken by the players, where the target article of the game is a country:
+**Second**, we focus on the pathways that were taken by the players, where the target article of the game is a country:
 * Q3: Is there a correlation between the ratio of finished pathways and the region or economic classification of a country?
-* Q4: Is there a correlation between the length of the pathway taken respectively the time needed and the region or economic classification of a country?
+* Q4: Is there a correlation between the length of the pathway taken or the time needed and the region or economic classification of a country?
 
-**Third**, we want to deepen the analysis by controlling for two confounders (population size and economic classification) and answer the following questions:
+**Third**, we deepen the analysis by controlling for two confounders (population size and economic classification) and answer the following questions:
 * Q5: By investigating article length, article sentiment or number of hyperlinks while controlling for population size and economic classification, is there a representation bias based on countries in Wikipedia? 
 * Q6: While controlling for as much of the bias in the dataset as we can, do we see additional cultural bias of the players in the pathways they have taken?
 
@@ -41,7 +41,7 @@ Additionally, we also need the population size of each country:
 ## Methods
 
 ### Data cleaning and wrangling
-To analyse the Wikispeedia dataset, several dataframes are created to extract the necessary data from the Wikispeedia dataset. Then those dataframes are populated with additional data from the UN datasets, such as region (17 different categories), economic classification (4 different categories) and their population size. To be consistent with the Wikispeedia dataset, the additional data reflects the status between 2012 to 2014. Special attention had to be paid to the fact, that for several countries the UN uses different names, than Wikipedia. Additionally some countries like Taiwan are not recognized by the UN. Since we analyze the Wikispeedia dataset, we convert the names in the UN dataframes to those used in Wikipedia and add additional information for e.g. Taiwan on our own.
+To analyze the Wikispeedia dataset, several dataframes are created to extract the necessary information. These dataframes are then augmented with additional data from the UN datasets, including region (17 different categories), economic classification (4 different categories), and population size. For consistency with the Wikispeedia dataset, this additional data reflects the status from 2012 to 2014. Special attention was required due to the fact that the UN uses different names for several countries compared to Wikipedia. Additionally, some countries, such as Taiwan, are not recognized by the UN. As we analyze the Wikispeedia dataset, we adjust the names in the UN dataframes to match those used in Wikipedia and independently add additional information for countries like Taiwan.
 
 
 ### Statistical analysis
@@ -50,8 +50,8 @@ To make statements about the dataset, we define the following metrics, calculate
 
 * Length of the Wikipedia article for country C
 * Sentiment score of the Wikipedia article for country C using an open source model, provided by https://huggingface.co/blog/sentiment-analysis-python.
-* Number of hyperlinks in other articles pointing to the article about country C (called links in)
-* Number of hyperlinks in the article about country C pointing to other articles (called links out)
+* Number of hyperlinks in other articles pointing to the article about country C (called links in or in-degree)
+* Number of hyperlinks in the article about country C pointing to other articles (called links out or out-degree)
 * Proportion of completed and uncompleted pathways where country C was the target
 * Length and time of pathways targeting country C
 * Frequency of article C's involvement in pathways where it was neither the start nor the target
@@ -61,7 +61,7 @@ To visualize those different metrics, we group them by region and economic class
 
 #### Regression analysis
 
-To assess whether the Wikispeedia dataset contains **multiple linear regressions** is used. Multiple linear regression gives us the effect size and the p-value of e.g. the relationship between region and the sentiment score. Furthermore, multiple linear regression gives us the possibility to control for the confouning factors population size and economic classification. Population size and economic classification are important confounding factors, because both the economic power and the population size influence the amount of content that can be generated and published on Wikipedia.
+To assess whether the Wikispeedia dataset contains bias, **multiple linear regressions** are used. Multiple linear regression analysis reveals the effect size and the p-value, for example, of the relationship between region and sentiment score. Additionally, it allows us to control for confounding factors such as population size and economic classification. Both population size and economic classification are significant confounding factors because they influence the amount of content that can be generated and published on Wikipedia about a country.
 
 
 ### Ethical considerations
@@ -90,9 +90,9 @@ Our timeline consists of internal milestones on every Wednesday (meeting in pers
 
 ## Organization within the team
 
-- Blanche: Data story and website
+- Blanche: Datastory and website
 
-- Colin: Data story and website
+- Colin: Datastory and website
 
 - Francisco: Regression analysis
 
